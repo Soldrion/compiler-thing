@@ -76,7 +76,6 @@ private:
         return m_src.at(m_index++);
     }
 
-
     const std::string m_src;
 
     int m_index = 0;
