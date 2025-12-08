@@ -6,8 +6,8 @@ Going to follow it and make my own spin on it for fun.
 
 ## Usage
 
-./main "<"file">".edin
+./main file.edin
 It will then compile
 
-./"<file>"
+./file
 It runs
