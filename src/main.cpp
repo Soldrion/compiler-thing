@@ -11,7 +11,7 @@ std::string tokens_to_asm(const std::vector<Token>& tokens) {
     output << "global _start\n_start:\n";
     for (int i = 0; i < tokens.size(); i++) {
         const Token& token = tokens.at(i);
-        if (token.type == TokenType::_exit) {
+        if (token.type == TokenType::exit) {
             if (i+1 < tokens.size() && tokens.at(i+1).type == TokenType::int_lit) {
                 if (i+2 < tokens.size() && tokens.at(i+2).type == TokenType::semi) {
                     output << "    mov rax, 60\n";
